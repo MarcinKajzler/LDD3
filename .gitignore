@@ -30,3 +30,15 @@
 
 # Debug files
 *.dSYM/
+
+# index
+tags
+
+# temporary files
+*.swp
+*.cmd
+.tmp_versions
+*.symvers
+*.mod.c
+modules.order
+
