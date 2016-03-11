@@ -123,12 +123,12 @@ void    scull_access_cleanup(void);
 
 int     scull_trim(struct scull_dev *dev);
 
-static ssize_t scull_read(struct file *filp, char __user *buf, size_t count,
+ssize_t scull_read(struct file *filp, char __user *buf, size_t count,
                    loff_t *f_pos);
-static ssize_t scull_write(struct file *filp, const char __user *buf, size_t count,
+ssize_t scull_write(struct file *filp, const char __user *buf, size_t count,
                     loff_t *f_pos);
-static loff_t  scull_llseek(struct file *filp, loff_t off, int whence);
-static long scull_ioctl(struct file *filep, unsigned int cmd, unsigned long arg);
+loff_t  scull_llseek(struct file *filp, loff_t off, int whence);
+long scull_ioctl(struct file *filep, unsigned int cmd, unsigned long arg);
 
 
 /*

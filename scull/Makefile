@@ -16,7 +16,7 @@ PWD       := $(shell pwd)
 modules:
 	$(MAKE) -C $(KERNELDIR) M=$(PWD) modules
 else
-	scull-objs := main.o #pipe.o access.o
+	scull-objs := main.o pipe.o access.o
 	obj-m	:= scull.o
 endif
 
